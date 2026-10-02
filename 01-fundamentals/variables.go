@@ -3,10 +3,11 @@ package fundamentals
 import "fmt"
 
 const college = "Pragati Engineering College"
+
 var GlobalVar string = "I am a global public variable"
 var privateVar string = "I am a private global variable"
 
-func variables() {
+func Variables() {
 
 	// Variables
 	var name string = "Sri"

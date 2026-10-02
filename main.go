@@ -1,11 +1,19 @@
-package main;
-import "fmt";
-import "github.com/kstramyasri/go-developer-roadmap/01-fundamentals/fundamentals"
+package main
 
+import (
+	"fmt"
 
-func main(){
-	fmt.Println("Hello, World!");
-	fmt.Println(investmentCalc(1000, 0.05, 1));
-	fmt.Println("Global Variable:", fundamentals.GlobalVar);
-	fundamentals.variables();
+	"go-developer-roadmap/01-fundamentals"
+)
+
+func main() {
+	fmt.Println("Hello, World!")
+
+	fmt.Println(
+		fundamentals.InvestmentCalc(1000, 0.05, 1),
+	)
+
+	fmt.Println("Global Variable:", fundamentals.GlobalVar)
+
+	fundamentals.Variables()
 }
